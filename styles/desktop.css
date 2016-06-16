@@ -1,0 +1,18 @@
+body { font-size: 16px; }
+
+header { background-color: #391F68; font: 1em/1.55 'Helvetica'; }
+
+
+/*Commons*/
+body, #top, #top-main { min-width: 1000px; }
+dl { margin-bottom: 0px !important; }
+dt, dd { line-height: inherit !important; }
+
+/*Header*/
+header #top { position: relative; height: 24px; line-height: 24px; font-size: 0.85em; font-weight: bold;  }
+header #top .top-r { position: relative; float: right; }
+header #top .top-r .top-buttons { position: relative; float: left; display: inline; padding: 2px 0; z-index: 20;  }
+header #top .top-r .top-buttons dt { float: left; padding: 0 12px; height: 20px; line-height: 20px !important; color: #FFF; border-right: 1px solid #7A7A7A; cursor: pointer; }
+header #top .top-r .top-buttons dt i { margin: 0 0 0 3px; font-size: 14px; color: #645E70; }
+
+header #top-main { position: relative; height: 94px; }
