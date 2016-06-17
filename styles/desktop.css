@@ -1,18 +1,56 @@
 body { font-size: 16px; }
 
-header { background-color: #391F68; font: 1em/1.55 'Helvetica'; }
+header { background-color: #424241; font: 1em/1.55 'Helvetica'; }
 
 
 /*Commons*/
 body, #top, #top-main { min-width: 1000px; }
+a { text-decoration: none; }
+a:active, a:hover { text-decoration: none; color: inherit; }
 dl { margin-bottom: 0px !important; }
 dt, dd { line-height: inherit !important; }
+form { margin: 0; padding: 0; }
+h1, h2, h3, h4, h5, h6 { margin: 0 !important; padding: 0 !important; font-size: 100% !important; font-weight: normal; }
+ol, ul { list-style: outside none none; padding: 0; }
+
+.pr { position: relative; }
+
+.top-main-middle { float: left; display: inline; }
+.top-main-middle-inner h1 { float: left; display: inline; }
 
 /*Header*/
-header #top { position: relative; height: 24px; line-height: 24px; font-size: 0.85em; font-weight: bold;  }
-header #top .top-r { position: relative; float: right; }
-header #top .top-r .top-buttons { position: relative; float: left; display: inline; padding: 2px 0; z-index: 20;  }
-header #top .top-r .top-buttons dt { float: left; padding: 0 12px; height: 20px; line-height: 20px !important; color: #FFF; border-right: 1px solid #7A7A7A; cursor: pointer; }
-header #top .top-r .top-buttons dt i { margin: 0 0 0 3px; font-size: 14px; color: #645E70; }
+#top { position: relative; height: 24px; line-height: 24px; font-size: 0.85em; font-weight: bold;  }
+#top .top-r { position: relative; float: right; }
+#top .top-r .top-buttons { position: relative; float: left; display: inline; padding: 2px 0; z-index: 20;  }
+#top .top-r .top-buttons dt { float: left; padding: 0 12px; height: 20px; line-height: 20px !important; color: #FFF; border-right: 1px solid #7A7A7A; cursor: pointer; }
+#top .top-r .top-buttons dt i { margin: 0 0 0 3px; font-size: 14px; color: #645E70; }
 
-header #top-main { position: relative; height: 94px; }
+#top-main { position: relative; height: 94px; z-index: 10; }
+#top-main .top-main-middle { width: 100%; }
+#top-main .top-main-middle-inner { padding: 24px 360px 0 290px; }
+#top-main .top-main-middle-inner .seo-field { position: absolute; top: 0; left: 0; max-width: 390px; height: 24px; margin: 0 0 0 290px; overflow: hidden; font-size: 12px; line-height: 24px !important; color: #FFF; }
+#top-main .top-main-middle-inner .seo-field h1 { color: #391F68; line-height: 24px; }
+#top-main .top-main-middle-inner .seo-field a { color: #FFF; }
+
+/* Search bar */
+.top-search-form { background-color: #FFF; }
+#top-main .top-main-middle-inner form > * { box-sizing: border-box; }
+.search-category { position:relative; float: left;  }
+.search-category .search-category-scope { float: left; margin: 0; padding-left: 5px; width: 120px; height: 34px; overflow: hidden; background-color: #F3F3F3; border: 1px solid #F3F3F3; border-color: #F3F3F3 #CDCDCD #F3F3F3 #F3F3F3; }
+.search-category-labels { position: relative; overflow: hidden; cursor: default; }
+.search-category-labels span { display: block; margin: 0 21px 0 5px; overflow: hidden; font-size: 12px; color: #777; line-height: 33px; text-overflow: ellipsis; white-space: nowrap; }
+.search-category-labels i { position: absolute; top: 15px; right: 15px; width: 0; height: 0; line-height: 0;  color: #777; }
+
+.top-search-box { position: relative;  padding: 0 35px 0 10px; height: 34px;  overflow: hidden; background: #FFF; border: 1px solid #DDD;  }
+.top-search-box input { float: left; display: inline; margin: 6px 0; width: 100%; height: 18px; border: 0 none; }
+#search_button { position: absolute; top: 1px; right: 5px; display: block; width: 28px; height: 28px; font-size: 28px; cursor: pointer; }
+
+.top-links { position: absolute; bottom: 9px; left: 0; margin: 0 0 0 290px; font-size: 14px }
+.top-links li { position: relative; float: left; display: inline; margin: 5px -1px 0 0; padding:0 20px; height: 20px; border-left: 1px solid #666  }
+.top-links li:first-child { border: none !important; }
+.top-links li a { color: #FFF; text-transform: uppercase; }
+.top-links li a i { display: inline-block; width: 20px; height: 20px; font-size: 18px; }
+
+.nav-bar-outer { position: absolute; top: 0; left: 20px; width: 240px; }
+.nav-bar-outer h2 { height: 40px; font-size: 14px; line-height: 40px; text-indent: 20px; color: #FFF; vertical-align: middle; text-transform: uppercase;  }
+.nav-bar-outer h2 i { text-align: center; }
