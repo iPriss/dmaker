@@ -54,3 +54,56 @@ ol, ul { list-style: outside none none; padding: 0; }
 .nav-bar-outer { position: absolute; top: 0; left: 20px; width: 240px; }
 .nav-bar-outer h2 { height: 40px; font-size: 14px; line-height: 40px; text-indent: 20px; color: #FFF; vertical-align: middle; text-transform: uppercase;  }
 .nav-bar-outer h2 i { text-align: center; }
+
+/* ### PRODUCT ### */
+
+/*<div class="box">
+	<div class="box-wrapper">
+		<div class="product-alert"></div>
+		<div class="product-image"><img src="images/products/example/nb_gfast.jpg" alt="" class="base-img"><img src="images/products/example/nb_gfast2.jpg" alt="" class="feature-img"></div>
+		<div class="product-nav">
+			<a href="" class="select-product"><i class="fa fa-shopping-cart"></i></a>
+			<a href="" class="quick-view"><i class="fa fa-expand"></i></a>
+			<a href="" class="add-wishlist"><i class="fa fa-heart"></i></a>
+		</div>
+		<div class="product-title">Example Product</div>
+		<div class="product-price"><span class="old-price">$12.56</span><span class="price">$10.35</span></div>
+	</div>
+</div>*/
+
+/* Product Box */
+.products-list-conainer {  }
+.products-list-content {  }
+.product-list-content .box { position: relative; float: left; display: inline; height: 255px; padding: 0 15px; margin:95px 0 0; }
+.product-list-content .box .box-wrapper { position: relative; margin: 0; padding: 10px 10px 15px; background: #FFF; border: 1px solid #E5E5E5; }
+
+.product-list-content .box.first-row { margin: 0 !important; }
+
+.box-wrapper .product-alert { position: absolute; top: 10px; left: 0; width: 100%; z-index: 50; }
+.box-wrapper .product-alert span { float: left; display: inline-block; height: 22px; margin: 0 0 0 5px; padding: 3px 5px; font-size: 12px;9+ line-height: 16px; text-align: center; color: #FFF; text-transform: capitalize; }
+.box-wrapper .product-alert span:first-of-type { margin: 0 0 0 10px!important; }
+.box-wrapper .product-alert span.sale { background-color: #391F68; }
+.box-wrapper .product-alert span.new { background-color: #EC9C59; }
+
+.box-wrapper .product-image { position: relative; float: left; overflow: hidden; }
+.box-wrapper .product-image img { width: 100%; }
+.box-wrapper .product-image span img.feature-img { position: absolute; top: 0; left: 0; right: 0; opacity: 0; z-index: 0; /*transform: translate3D(0px, 100% 0px); transition: all 500ms ease 0ms;*/ }
+
+.box-wrapper .product-image:hover { transition: all 500ms ease 0ms; }
+.box-wrapper .product-image:hover img { opacity: 0; transform: translate3D(0px, -100%, 0px); }
+.box-wrapper .product-image:hover span img.feature-img { opacity: 1; transform: translate3D(0px, 0%, 0px); z-index: 1px }
+
+.box-wrapper .product-nav { position: absolute; bottom: 25px; left: -1px; right: -1px; display: block; width: auto; opacity: 0; text-align: center; transform: translate3D(0px, 0% 0px); transition: all 500ms ease 0ms; }
+.product-list-content .box .box-wrapper:hover .product-nav { bottom: 90px; opacity: 1; z-index: 20; transform: translate3D(0px, 0px, 0px);  }
+.box-wrapper .product-nav  { width: auto; display: inline-block; margin: 0 auto; }
+.box-wrapper .product-nav a { display: inline-block; width: 34px; height: 34px; padding: 0; line-height: 34px; font-weight: 400; background: #391F68; text-align: center; border: medium none; border-raidus: 0; trasition: all 0.3s ease 0s; }
+.box-wrapper .product-nav a i { line-height: 34px; color: #FFF !important; }
+.box-wrapper .product-nav a:hover { background-color: #4D4D4D; }
+
+.box-wrapper .product-title { position: relative; float: left; }
+.box-wrapper .product-title h5 { display: inline-block; margin-bottom: 10px !important; font-size: 13px; font-weight: 400; color: #333; text-align: center !important; }
+.box-wrapper .product-title h5 a { color: inherit; }
+
+.box-wrapper .product-price { position: relative; float: left; width: 100%; text-align: center; }
+.box-wrapper .product-price span { display: inline; margin-bottom: 10px; font-size: 15px !important; color: #391F68; }
+.box-wrapper .product-price span.old-price { margin-right: 10px; color: #aaa; text-decoration: line-through;  }
